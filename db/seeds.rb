@@ -13,7 +13,7 @@ heroes = Hero.create([
     {name: "Emmanuel", super_name: "Ema"}
     ])
 
-powers = Power.create([
+Power.create([
     { name: "Nguvu", description: "Energetic"},
     { name: "Supa Power", description: "Powerfull"},
     { name: "Indomitable", description: "Powerfull"}
