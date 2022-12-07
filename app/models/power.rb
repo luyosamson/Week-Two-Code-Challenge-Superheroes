@@ -1,6 +1,6 @@
 class Power < ApplicationRecord
     validates :description,presence: true
-    validates :description,length: {minimum: 20}
-    has_many :HeroPower
-    has_many :heros,through: :HeroPower
+    validates :description, length: {minimum: 20}
+    has_many :hero_powers,dependent: :destroy
+    has_many :heros,through: :hero_powers
 end
