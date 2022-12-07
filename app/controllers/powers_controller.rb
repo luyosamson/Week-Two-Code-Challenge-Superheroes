@@ -1,5 +1,5 @@
 class PowersController < ApplicationController
-class PowersController < ApplicationController
+
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     rescue_from ActiveRecord::RecordInvalid, with: :create_error
    
@@ -52,5 +52,5 @@ class PowersController < ApplicationController
     def update_param
         params.permit(:description)
     end
-end
+
 end
